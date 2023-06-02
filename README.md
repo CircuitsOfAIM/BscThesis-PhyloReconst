@@ -16,9 +16,13 @@ In this step the original code of the mentioned paper used.but it customized to 
 The dataset contains of multiple sequence alignment of each datapoint which was collected from PloiDB and TreeBase.Then :
 
 -Initial starting tree is build using `phyml 3.01` linux software
+
 -SPR neighbours for the corresponding tree acquired.
+
 -log-likelihood for each calculated using `raxml-ng linux`
+
 -feature selection done by using most promising features needed to construct a tree
+
 -training the random forest model with tree-likelihood pairs
 
 #### Tree construction
@@ -27,13 +31,21 @@ At first multiple sequence alignment of the phylogenetic data of Rosa x binaloud
 
 ## Setup
   -Unzip the mode `finalized_model.zip`
+  
   -Use `predictor.py` to generate log-likehood predictions.
+  
   NOTE: tree extraction module has to be fixed.As the index of input data (in CSV) is same as output of model.You can find the best tree version by index of the output in input.By knowing the name of the sub_trees you can acquire tree representation in newick format.
+  
   -Use `visualizer.py` to visualize the predicted tree using ete module.
+  
   -Use `evaluator.py` to compare original versus predicted model using robinsoun-floud metric.
+  
 #### File System
+
 -`data` : contains training_data , validation_data and data related to Rosa x binaloudensis (initial tree,spr collection,input data,out data)
+
 -`softwares`: linux version of used phyml and raxml-ng softwared included
+
 -`training` : all the modules related to training the model.
 
 ## Results
