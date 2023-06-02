@@ -50,7 +50,13 @@ At first multiple sequence alignment of the phylogenetic data of Rosa x binaloud
 
 ## Results
 
+- The following result are correlation value for the model
+
+- you can see the predicted tree versus the original tree obtained from other methods in the paper 2
+
 ![](predicted_tree.pdf)
+
+- Comparision result of robinson-floud metric shows rf/maxrf is 2/36 which the normalized indicate good similarity.
 
 ## References
 
